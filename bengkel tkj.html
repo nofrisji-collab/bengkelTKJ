@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bengkel TKJ - Teknik Komputer dan Jaringan</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        header {
+            background: #071b36;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            color: #00c8ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00c8ff;
+        }
+
+        .hero {
+            min-height: 450px;
+            background: linear-gradient(135deg, #071b36, #075985);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .hero span {
+            color: #00d4ff;
+        }
+
+        .hero p {
+            max-width: 600px;
+            line-height: 1.7;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 13px 25px;
+            background: #00c8ff;
+            color: #071b36;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 65px 8%;
+        }
+
+        .judul {
+            text-align: center;
+            font-size: 30px;
+            color: #075985;
+            margin-bottom: 35px;
+        }
+
+        .tentang {
+            text-align: center;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .layanan {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 15px #00000012;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card .icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #075985;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .kontak {
+            background: #071b36;
+            color: white;
+            text-align: center;
+            line-height: 2;
+        }
+
+        .kontak h2 {
+            color: #00c8ff;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background: #041225;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media(max-width: 600px) {
+            header {
+                justify-content: center;
+                gap: 15px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                font-size: 13px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>🔧 BENGKEL TKJ</h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#layanan">Layanan</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <div class="hero" id="home">
+        <h1>Selamat Datang di <span>Bengkel TKJ</span></h1>
+        <p>
+            Pusat praktik dan layanan Teknik Komputer dan Jaringan.
+            Belajar, memperbaiki, merakit, dan mengembangkan teknologi
+            komputer serta jaringan bersama kami.
+        </p>
+        <a href="#layanan" class="btn">Lihat Layanan</a>
+    </div>
+
+    <section id="tentang">
+        <h2 class="judul">Tentang Bengkel TKJ</h2>
+        <div class="tentang">
+            <p>
+                Bengkel TKJ merupakan tempat praktik siswa jurusan
+                Teknik Komputer dan Jaringan untuk mengembangkan
+                keterampilan di bidang teknologi informasi.
+                Di sini siswa dapat belajar merakit komputer,
+                menginstal sistem operasi, memperbaiki perangkat,
+                membuat kabel jaringan, dan melakukan konfigurasi
+                jaringan komputer.
+            </p>
+        </div>
+    </section>
+
+    <section id="layanan">
+        <h2 class="judul">Layanan Bengkel TKJ</h2>
+
+        <div class="layanan">
+
+            <div class="card">
+                <div class="icon">💻</div>
+                <h3>Servis Komputer</h3>
+                <p>Perbaikan komputer, laptop, dan pengecekan kerusakan perangkat keras.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🖥️</div>
+                <h3>Instalasi OS</h3>
+                <p>Instalasi Windows, Linux, driver, dan aplikasi komputer.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🌐</div>
+                <h3>Jaringan Komputer</h3>
+                <p>Pembuatan jaringan LAN, konfigurasi router, dan access point.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🔌</div>
+                <h3>Pembuatan Kabel LAN</h3>
+                <p>Crimping kabel UTP dengan standar straight dan crossover.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">⚙️</div>
+                <h3>Perakitan PC</h3>
+                <p>Merakit komputer dari komponen seperti motherboard, RAM, dan processor.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📡</div>
+                <h3>Konfigurasi Mikrotik</h3>
+                <p>Belajar konfigurasi IP address, DHCP, hotspot, dan routing.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="kontak" id="kontak">
+        <h2>Hubungi Kami</h2>
+        <p>📍 Bengkel Praktik Teknik Komputer dan Jaringan</p>
+        <p>📧 Email: bengkeltkj@gmail.com</p>
+        <p>📱 WhatsApp: 08xxxxxxxxxx</p>
+        <a href="https://wa.me/628xxxxxxxxxx" class="btn">
+            Hubungi WhatsApp
+        </a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Bengkel TKJ | Teknik Komputer dan Jaringan</p>
+        <p>Belajar Teknologi, Membangun Masa Depan.</p>
+    </footer>
+
+</body>
+</html>
